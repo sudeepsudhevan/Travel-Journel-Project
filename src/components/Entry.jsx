@@ -1,8 +1,9 @@
 import markerpng from '../assets/marker.png'
 
-function Entry({ img, title, country, googleMapsLink, dates, text }) {
-    return (
-        <article className="journal-entry">
+function Entry({ entry }) {
+  const { img, title, country, googleMapsLink, dates, text } = entry
+  return (
+    <article className="journal-entry">
       <div className="main-image-container">
         <img
           className="main-image"
@@ -27,7 +28,7 @@ function Entry({ img, title, country, googleMapsLink, dates, text }) {
         </p>
       </div>
     </article>
-    )
+  )
 }
 
 export default Entry
