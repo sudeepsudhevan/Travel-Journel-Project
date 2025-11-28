@@ -1,9 +1,9 @@
-
+import globepng from '../assets/globe.png'
 
 function Header() {
   return (
     <header className="header">
-      <img src="src/assets/globe.png" alt="globe icon" />
+      <img src={globepng} alt="globe icon" />
       <h1>my travel journal.</h1>
     </header>
   )
