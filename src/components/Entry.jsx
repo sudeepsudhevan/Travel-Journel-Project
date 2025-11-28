@@ -1,7 +1,9 @@
 import markerpng from '../assets/marker.png'
 
-function Entry({ entry }) {
-  const { img, title, country, googleMapsLink, dates, text } = entry
+function Entry(props) {
+  // console.log(props);
+  
+  const { img, title, country, googleMapsLink, dates, text } = props
   return (
     <article className="journal-entry">
       <div className="main-image-container">

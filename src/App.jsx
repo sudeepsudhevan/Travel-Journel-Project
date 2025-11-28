@@ -7,7 +7,7 @@ function App() {
     return (
       <Entry
         key = {entry.id}
-        entry = {entry}
+        {...entry}
       />
     );
   });
